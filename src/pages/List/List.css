@@ -1,0 +1,74 @@
+.list-table-formats {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 0.7fr 0.7fr 2fr 0.5fr 0.8fr; /* ← زيد أو عدل النسب حسب الحاجة */
+    align-items: center;
+    gap: 5px;
+    padding: 12px 15px;
+    border: 1px solid #cacaca;
+    font-size: 13px;
+}
+
+.list-table-formats .title{
+    background-color: #f9f9f9;
+}
+.list .list-table-formats img{
+    width: 70px;
+    object-fit: cover;
+}
+.cursor{
+    cursor: pointer;
+}
+
+@media (max-width:600px) {
+    .list-table-formats{
+        grid-template-columns: 1fr 2fr ;
+        gap: 15px;
+        
+    }
+    .list-table-formats.title{
+        display: none;
+    }
+}
+
+
+
+
+.add{
+    width: 70%;
+    margin-left: max(5vw,25px);
+    margin-top: 50px;
+    color: #6d6d6d;
+    font-size: 16px;
+}
+.add form{
+    gap: 20px;
+}
+.add-img-upload img{
+    width: 120px;
+}
+.add-product-name,.add-product-description {
+    width: max(40%,280px);
+}
+
+.add-product-name input,.add-product-description textarea {
+    padding: 10px;
+}
+.add-category-price{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.add-category-price input,.add-category-price select{
+    width: max(40%,280px);
+    padding: 10px;
+}
+
+.add-btn{
+    max-width: 120px;
+    border: none;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
